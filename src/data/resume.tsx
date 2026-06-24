@@ -12,7 +12,6 @@ import { Vite } from "@/components/ui/svgs/vite";
 import { Pnpm } from "@/components/ui/svgs/pnpm";
 import { Git } from "@/components/ui/svgs/git";
 import { Linux } from "@/components/ui/svgs/linux";
-import { CIcon } from "@/components/ui/svgs/c";
 import type { ReactNode } from "react";
 
 type Photo = {
@@ -130,7 +129,6 @@ export const DATA = {
     { name: "Postgres", icon: Postgresql },
     { name: "Git", icon: Git },
     { name: "Linux", icon: Linux },
-    { name: "C", icon: CIcon },
   ],
   navbar: [
     { href: "/", icon: House, label: "Home" },

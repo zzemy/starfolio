@@ -89,12 +89,12 @@ const sectionComponents: Record<string, React.ReactNode> = {
         <BlurFade delay={BLUR_FADE_DELAY * 9}>
           <h2 className="text-xl font-bold">{DATA.sections.skills.heading}</h2>
         </BlurFade>
-        <div className="flex flex-wrap gap-2">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
           {DATA.skills.map((skill, id) => (
             <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-              <div className="border bg-background border-border ring-2 ring-border/20 rounded-xl h-8 w-fit px-4 flex items-center gap-2">
-                {skill.icon && <skill.icon className="size-4 rounded overflow-hidden object-contain" />}
-                <span className="text-foreground text-sm font-medium">{skill.name}</span>
+              <div className="flex h-9 w-full items-center gap-2 rounded-xl border border-border bg-background px-3 ring-2 ring-border/20">
+                {skill.icon && <skill.icon className="size-4 shrink-0 overflow-hidden rounded object-contain" />}
+                <span className="min-w-0 truncate text-sm font-medium text-foreground">{skill.name}</span>
               </div>
             </BlurFade>
           ))}

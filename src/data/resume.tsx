@@ -133,9 +133,17 @@ export const DATA = {
   ],
   githubSnapshot: [
     { label: "Public repos", value: "16", detail: "Open repositories" },
-    { label: "Followers", value: "5", detail: "GitHub followers" },
-    { label: "Following", value: "16", detail: "Developers followed" },
+    { label: "Contributions", value: "1,034", detail: "Commits + authored PRs" },
+    { label: "Pull requests", value: "47", detail: "Public authored PRs" },
     { label: "Since", value: "2021", detail: "Joined GitHub" },
+  ],
+  githubLanguages: [
+    { name: "TypeScript", bytes: 51263828 },
+    { name: "CSS", bytes: 153569 },
+    { name: "JavaScript", bytes: 137249 },
+    { name: "HTML", bytes: 64655 },
+    { name: "C#", bytes: 44162 },
+    { name: "PLpgSQL", bytes: 33884 },
   ],
   navbar: [
     { href: "/", icon: House, label: "Home" },

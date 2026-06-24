@@ -88,8 +88,9 @@ export const DATA = {
     work: { order: 2, enabled: false, heading: "Work Experience", presentLabel: "Present" },
     education: { order: 3, enabled: false, heading: "Education" },
     skills: { order: 4, enabled: true, heading: "Skills" },
+    github: { order: 5, enabled: true, heading: "GitHub Snapshot" },
     projects: {
-      order: 5,
+      order: 6,
       enabled: false,
       label: "Projects",
       heading: "Selected Work",
@@ -129,6 +130,12 @@ export const DATA = {
     { name: "Postgres", icon: Postgresql },
     { name: "Git", icon: Git },
     { name: "Linux", icon: Linux },
+  ],
+  githubSnapshot: [
+    { label: "Public repos", value: "16", detail: "Open repositories" },
+    { label: "Followers", value: "5", detail: "GitHub followers" },
+    { label: "Following", value: "16", detail: "Developers followed" },
+    { label: "Since", value: "2021", detail: "Joined GitHub" },
   ],
   navbar: [
     { href: "/", icon: House, label: "Home" },

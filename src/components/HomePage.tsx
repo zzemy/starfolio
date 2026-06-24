@@ -9,6 +9,7 @@ import HackathonsSection from "@/components/section/hackathons-section";
 import PhotosSection from "@/components/section/photos-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
+import GitHubSnapshotSection from "@/components/section/github-snapshot-section";
 import { ArrowUpRight } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -101,6 +102,11 @@ const sectionComponents: Record<string, React.ReactNode> = {
         </div>
       </div>
     </section>
+  ),
+  github: (
+    <BlurFade delay={BLUR_FADE_DELAY * 11}>
+      <GitHubSnapshotSection />
+    </BlurFade>
   ),
   projects: (
     <section id="projects">

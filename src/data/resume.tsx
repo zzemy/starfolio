@@ -155,7 +155,7 @@ export const DATA = {
         name: "Blog",
         url: "https://blog.zzemy.top",
         icon: Icons.globe,
-        navbar: true,
+        navbar: false,
       },
       Website: {
         name: "Website",
@@ -167,7 +167,7 @@ export const DATA = {
         name: "Send Email",
         url: "mailto:1992107794@qq.com",
         icon: Icons.email,
-        navbar: false,
+        navbar: true,
       },
     },
   },
